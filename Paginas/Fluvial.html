@@ -36,6 +36,111 @@
 
 
 	</nav>
+	<ul class="sidenav cyan darken-2" id="mobile-demo">
+		<li><a href="/index.html">Pagina principal</a></li>
+		<li class="active"><a href="/Paginas/Aereo.html">Viajes aereos</a></li>
+		<li><a href="/Paginas/Terrestre.html">Viajes terrestres</a></li>
+		<li><a href="/Paginas/Fluvial.html">Viajes maritimos</a></li>
+	</ul>
+
+	<div class="section ">
+		<div class="slider">
+			<ul class="slides">
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3>This is our big Tagline!</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption left-align">
+						<h3>Left Aligned Caption</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption right-align">
+						<h3>Right Aligned Caption</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3>This is our big Tagline!</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container section">
+		<div class="col s12 m7">
+			<h3 class="header">A donde vas?</h3>
+			<div class="card horizontal">
+
+				<div class="card-stacked">
+					<div class="card-content">
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s6">
+										<input placeholder="Placeholder" id="first_name" type="text"
+											class="validate">
+										<label for="first_name">First Name</label>
+									</div>
+									<div class="input-field col s6">
+										<input id="last_name" type="text" class="validate">
+										<label for="last_name">Last Name</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input disabled value="I am not editable" id="disabled"
+											type="text" class="validate">
+										<label for="disabled">Disabled</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="password" type="password" class="validate">
+										<label for="password">Password</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="email" type="email" class="validate">
+										<label for="email">Email</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										This is an inline input field:
+										<div class="input-field inline">
+											<input id="email_inline" type="email"
+												class="validate">
+											<label for="email_inline">Email</label>
+											<span class="helper-text" data-error="wrong"
+												data-success="right">Helper text</span>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="card-action">
+						<button class="btn waves-effect waves-light Right" type="submit"
+							name="action">Enviar
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="test1" class="col s12">Test 1</div>
 	<div id="test2" class="col s12">Test 2</div>
 	<div id="test3" class="col s12">Test 3</div>
@@ -58,6 +163,23 @@
 			</div>
 		</div>
 	</footer>
+	<script> document.addEventListener('DOMContentLoaded', function () {
+
+
+			M.AutoInit();
+
+
+		});
+	</script>
+	<script>document.addEventListener('DOMContentLoaded', function () {
+			var elems = document.querySelectorAll('.slider');
+			var instances = M.Slider.init(elems);
+		});</script>
+
+	<script> document.addEventListener('DOMContentLoaded', function () {
+			var elems = document.querySelectorAll('.sidenav');
+			var instances = M.Sidenav.init(elems);
+		});</script>
 </body>
 
 </html>
