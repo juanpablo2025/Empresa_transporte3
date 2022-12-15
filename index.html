@@ -25,22 +25,22 @@
 
 	<nav class="nav-extended green darken-4">
 		<div class="nav-wrapper">
-			<a href="/index.html" class="brand-logo">HORIZONTE</a>
+			<a href="/index.html" class="brand-logo center">Horizonte</a>
+			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li class="active"><a href="/index.html">Pagina principal</a></li>
+				<li><a href="/Paginas/Aereo.html">Viajes aereos</a></li>
+				<li><a href="/Paginas/Terrestre.html">Viajes terrestres</a></li>
+				<li><a href="/Paginas/Fluvial.html">Viajes maritimos</a></li>
 
-
-
-
-		</div>
-
-		<div class="nav-content">
-			<ul class="tabs tabs-transparent">
-				<li class="tab"><a class="active" href="/index.html">Pagina Principal</a></li>
-				<li class="tab"><a href="/Paginas/Aereo.html">Aereo</a></li>
-				<li class="tab"><a href="/Paginas/Terrestre.html">Terrestre</a></li>
-				<li class="tab"><a href="/Paginas/Fluvial.html">Fluvial</a></li>
 			</ul>
-		</div>
 	</nav>
+	<ul class="sidenav green darken-4 " id="mobile-demo">
+		<li class="active"><a href="/index.html">Pagina principal</a></li>
+		<li><a href="/Paginas/Aereo.html">Viajes aereos</a></li>
+		<li><a href="/Paginas/Terrestre.html">Viajes terrestres</a></li>
+		<li><a href="/Paginas/Fluvial.html">Viajes maritimos</a></li>
+	</ul>
 
 
 	<div class="col s12">
@@ -202,8 +202,10 @@
 				</div>
 			</div>
 		</footer>
-
-
+		<script> document.addEventListener('DOMContentLoaded', function () {
+				var elems = document.querySelectorAll('.sidenav');
+				var instances = M.Sidenav.init(elems);
+			});</script>
 
 
 
@@ -215,12 +217,3 @@
 
 
 </html>
-<script>
-
-	document.addEventListener('DOMContentLoaded', function () {
-		var elems = document.querySelectorAll('.sidenav');
-		var instances = M.Sidenav.init(elems, options);
-	});
-
-
-</script>

@@ -13,6 +13,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
 </head>
 
 
@@ -23,29 +24,196 @@
 
 	<nav class="nav-extended cyan darken-2">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Horizonte</a>
+
+			<a href="/index.html" class="brand-logo center">Horizonte</a>
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">JavaScript</a></li>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="/index.html">Pagina principal</a></li>
+				<li class="active"><a href="/Paginas/Aereo.html">Viajes aereos</a></li>
+				<li><a href="/Paginas/Terrestre.html">Viajes terrestres</a></li>
+				<li><a href="/Paginas/Fluvial.html">Viajes maritimos</a></li>
 
 			</ul>
-		</div>
-		<div class="nav-content">
-			<ul class="tabs tabs-transparent">
-				<li class="tab disabled"><a href="/index.html">Pagina Principal</a></li>
-				<li class="tab"><a class="active" href="/Paginas/Aereo.html">Aereo</a></li>
-				<li class="tab"><a href="/Paginas/Terrestre.html">Terrestre</a></li>
-				<li class="tab"><a href="/Paginas/Fluvial.html">Fluvial</a></li>
-			</ul>
-		</div>
 
 
 
 	</nav>
 
+	<ul class="sidenav cyan darken-2" id="mobile-demo">
+		<li><a href="/index.html">Pagina principal</a></li>
+		<li class="active"><a href="/Paginas/Aereo.html">Viajes aereos</a></li>
+		<li><a href="/Paginas/Terrestre.html">Viajes terrestres</a></li>
+		<li><a href="/Paginas/Fluvial.html">Viajes maritimos</a></li>
+	</ul>
+
+	<div class="section ">
+		<div class="slider">
+			<ul class="slides">
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3>This is our big Tagline!</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption left-align">
+						<h3>Left Aligned Caption</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption right-align">
+						<h3>Right Aligned Caption</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+				<li>
+					<img src="Imagenes/imagen1.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3>This is our big Tagline!</h3>
+						<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container section">
+		<div class="card">
+			<div class="card-content">
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient
+					because
+					I require little markup to use effectively.</p>
+			</div>
+			<div class="card-tabs">
+				<ul class="tabs tabs-fixed-width">
+					<li class="tab"><a href="#test4">Test 1</a></li>
+					<li class="tab"><a class="active" href="#test5">Test 2</a></li>
+					<li class="tab"><a href="#test6">Test 3</a></li>
+				</ul>
+			</div>
+			<div class="card-content grey lighten-4">
+				<div id="test4">Test 1</div>
+				<div id="test5">
+					<div class="row">
+						<form class="col s12">
+							<div class="row">
+								<div class="input-field col s6">
+									<i class="material-icons prefix">account_circle</i>
+									<input id="icon_prefix" type="text" class="validate">
+									<label for="icon_prefix">First Name</label>
+								</div>
+								<div class="input-field col s6">
+									<i class="material-icons prefix">phone</i>
+									<input id="icon_telephone" type="tel" class="validate">
+									<label for="icon_telephone">Telephone</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="test6">
+					<div class="row ">
+
+						<div class="col s4 ">
+							<!-- Promo Content 1 goes here -->
+							<div class="row">
+
+
+								<div class="card">
+									<div class="card-image">
+
+										<img src="./Paginas/Imagenes/imagen1.jpg">
+										<span class="card-title white-text">Viajes Aereos</span>
+										<a
+											class="btn-floating halfway-fab waves-effect waves-light cyan darken-2"><i
+												class="go">Ir</i></a>
+									</div>
+									<div class="card-content">
+										<p>I am a very simple card. I am good at containing small
+											bits of
+											information. I am convenient because I require little
+											markup
+											to
+											use effectively.</p>
+									</div>
+
+
+
+
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="col s4 ">
+							<!-- Promo Content 2 goes here -->
+							<div class="row">
+
+
+								<div class="card">
+									<div class="card-image">
+										<img src="./Paginas/Imagenes/imagen2.jpg">
+										<span class="card-title white-text">Viajes Terrestres</span>
+										<a
+											class="btn-floating halfway-fab waves-effect waves-light amber accent-3"><i
+												class="go">Ir</i></a>
+									</div>
+									<div class="card-content">
+										<p>I am a very simple card. I am good at containing
+											small
+											bits of
+											information. I am convenient because I require
+											little
+											markup
+											to
+											use effectively.</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col s4 ">
+							<!-- Promo Content 3 goes here -->
+							<div class="row">
+
+
+								<div class="card">
+									<div class="card-image">
+										<img src="./Paginas/Imagenes/imagen3.jpg">
+										<span class="card-title white-text">Viajes Fluviales</span>
+										<a
+											class="btn-floating halfway-fab waves-effect waves-light light-blue darken-4"><i
+												class="go">Ir</i></a>
+									</div>
+									<div class="card-content">
+										<p>I am a very simple card. I am good at
+											containing
+											small
+											bits of
+											information. I am convenient because I
+											require
+											little
+											markup
+											to
+											use effectively.</p>
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="test1" class="col s12">Test 1</div>
 	<div id="test2" class="col s12">Test 2</div>
 	<div id="test3" class="col s12">Test 3</div>
@@ -67,7 +235,28 @@
 				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 			</div>
 		</div>
+
 	</footer>
+	<script> document.addEventListener('DOMContentLoaded', function () {
+
+
+			M.AutoInit();
+
+
+		});
+	</script>
+	<script>document.addEventListener('DOMContentLoaded', function () {
+			var elems = document.querySelectorAll('.slider');
+			var instances = M.Slider.init(elems);
+		});</script>
+
+	<script> document.addEventListener('DOMContentLoaded', function () {
+			var elems = document.querySelectorAll('.sidenav');
+			var instances = M.Sidenav.init(elems);
+		});</script>
+
+
+
 </body>
 
 
